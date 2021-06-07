@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">My Favorite Consumer</string>
+    <string name="name">Name</string>
+    <string name="uname">Username</string>
+    <string name="loc">Location</string>
+    <string name="repo_sum">0</string>
+    <string name="comp">Company</string>
+    <string name="language">Change Language</string>
+    <string name="find">Find by username here</string>
+    <string name="search">Search</string>
+    <string name="repo">Repositories</string>
+    <string name="fg">Following</string>
+    <string name="fs">Followers</string>
+    <string name="tab1">Following</string>
+    <string name="tab2">Followers</string>
+    <string name="submit">submit</string>
+    <string name="favorite">Favorite User</string>
+    <string name="favorite_page">Favorite Users</string>
+    <string name="alarm">Alarm</string>
+    <string name="alarm_page">Set an Alarm</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="alarm_reminder">reminder</string>
+    <string name="cancel_btn">Cancel Alarm</string>
+    <string name="alarm_btn">Set Alarm</string>
+    <string name="cancelAlarm">Alarm is Canceled</string>
+    <string name="setRepeatingAlarm">Alarm is Set</string>
+</resources>

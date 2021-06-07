@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Github</string>
+    <string name="name">Nama</string>
+    <string name="uname">Nama Pengguna</string>
+    <string name="loc">Lokasi</string>
+    <string name="fg">Mengikuti</string>
+    <string name="fs">Pengikut</string>
+    <string name="language">Ubah Bahasa</string>
+    <string name="search">Pencarian</string>
+    <string name="repo_sum">0</string>
+    <string name="comp">Perusahaan</string>
+    <string name="repo">Repositori</string>
+    <string name="find">Cari nama pengguna</string>
+    <string name="tab1">Mengikuti</string>
+    <string name="tab2">Pengikut</string>
+    <string name="submit">submit</string>
+    <string name="favorite">Pengguna Favorit</string>
+    <string name="favorite_page">Favorite Users</string>
+    <string name="alarm">Alarm</string>
+    <string name="alarm_page">Set an Alarm</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="alarm_reminder">reminder</string>
+    <string name="cancel_btn">Cancel Alarm</string>
+    <string name="alarm_btn">Set Alarm</string>
+    <string name="cancelAlarm">Alarm is Canceled</string>
+    <string name="setRepeatingAlarm">Alarm is Set</string>
+</resources>

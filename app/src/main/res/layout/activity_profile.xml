@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:background="@drawable/grad">
+
+        <LinearLayout
+            app:layout_scrollFlags="scroll|enterAlways|snap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="8dp"
+            android:orientation="vertical">
+
+            <ProgressBar
+                android:id="@+id/pbProfile"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imgItemA"
+                app:layout_anchorGravity="top|center_horizontal"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="5dp"
+                android:elevation="8dp"
+                app:layout_scrollFlags="scroll"
+                app:civ_border_color="@color/white"/>
+
+            <TextView
+                android:paddingTop="10dp"
+                android:id="@+id/tvName"
+                android:fontFamily="@font/sf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:text="@string/name"
+                android:textColor="@android:color/white"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="4dp"/>
+
+            <TextView
+                android:id="@+id/tvUsername"
+                android:textSize="16sp"
+                android:fontFamily="@font/sf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/uname" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            app:layout_scrollFlags="scroll|enterAlways|snap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="8dp"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tvCompany"
+                android:fontFamily="@font/sf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="@string/comp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            app:layout_scrollFlags="scroll|enterAlways|snap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="8dp">
+
+            <TextView
+                android:id="@+id/tvLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sf"
+                android:textSize="16sp"
+                android:gravity="center_horizontal"
+                android:text="@string/loc" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            app:layout_scrollFlags="scroll|enterAlways|snap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="8dp">
+
+            <TextView
+                android:id="@+id/tvRepo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sf"
+                android:text="@string/repo_sum"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/repo"
+                android:fontFamily="@font/sf"
+                android:layout_marginStart="10dp"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            app:layout_scrollFlags="scroll|enterAlways|snap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:fontFamily="@font/sf"
+            android:paddingTop="8dp"
+            android:paddingBottom="20dp">
+
+            <TextView
+                android:id="@+id/tvFollowing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/repo_sum"
+                android:fontFamily="@font/sf"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/fg"
+                android:layout_marginStart="10dp"
+                android:fontFamily="@font/sf"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tvFollowers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/repo_sum"
+                android:fontFamily="@font/sf"
+                android:textSize="16sp"
+                android:layout_marginStart="25dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/fs"
+                android:fontFamily="@font/sf"
+                android:layout_marginStart="10dp"
+                android:textSize="16sp" />
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/loveButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:gravity="center_horizontal"
+                android:background="@drawable/grad"
+                android:src="@drawable/baseline_favorite_border_white_36dp"/>
+
+        </LinearLayout>
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabLayout"
+            android:background="@color/white"
+            app:tabTextColor="@color/colorPrimaryDark"
+            app:tabIndicatorHeight="4dp"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_width="fill_parent"/>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/viewPager"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+    </androidx.viewpager.widget.ViewPager>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
